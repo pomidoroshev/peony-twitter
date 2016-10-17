@@ -10,17 +10,6 @@ import aiohttp
 
 from . import exceptions
 
-try:
-    from magic import Magic
-    mime = Magic(mime=True)
-    magic = True
-except:
-    print('Could not load python-magic, fallback to mimetypes',
-          file=sys.stderr)
-    import mimetypes
-    mime = mimetypes.MimeTypes()
-    magic = False
-
 
 class JSONObject(dict):
     """
