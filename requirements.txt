@@ -1,5 +1,4 @@
 # install_requires
 aiohttp
 oauthlib
-Pillow
 python-magic
